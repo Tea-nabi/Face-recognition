@@ -4,7 +4,7 @@ import numpy as np
 import ObjectDetectionDemo as ob
 
 face_recognizer = cv2.face.LBPHFaceRecognizer_create()
-face_recognizer.read('/Users/Rohan/PycharmProjects/Python_Basics/practiceSession/Object_Detection_demo/trainingData.yml')
+face_recognizer.read('')
 
 name = {0:"Rohan",1:"Sonu"}
 
