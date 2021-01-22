@@ -5,7 +5,7 @@ import numpy as np
 #Given an image below function returns rectangle for face detected alongwith gray scale image
 def faceDetection(test_img):
     gray_img=cv2.cvtColor(test_img,cv2.COLOR_BGR2GRAY)#convert color image to grayscale
-    face_haar_cascade=cv2.CascadeClassifier('/Users/Rohan/PycharmProjects/Python_Basics/practiceSession/Object_Detection_demo/haarcascade/haarcascade_frontalface_default.xml')#Load haar classifier
+    face_haar_cascade=cv2.CascadeClassifier('')#Load haar classifier
     print(face_haar_cascade)
     faces=face_haar_cascade.detectMultiScale(gray_img,scaleFactor=1.32,minNeighbors=5)#detectMultiScale returns rectangles
     #scale factor means decrease the original image size by 32%
